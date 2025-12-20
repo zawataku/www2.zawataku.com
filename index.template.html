@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="zawataku's Home Server | ざわたく.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www2.zawataku.com">
+    <meta name="description" content="ざわたくの自宅サーバ紹介ページ">
+    <title>zawataku's Home Server | ざわたく.com</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <p>Welcome to zawataku's Home Server</p>
+            <h1>WWW2.ZAWATAKU.COM</h1>
+        </header>
+
+        <div class="img-container">
+            <img src="./img/img01.webp" alt="サーバ本体の画像" class="top-img">
+        </div>
+
+        <div class="content">
+            <h1>概要</h1>
+            <p>ざわたくが保有する自宅サーバです。</p>
+            <p>当サイトをはじめとした、様々なサービスを稼働させています。</p>
+        </div>
+
+        <div class="content">
+            <h1>サーバ情報</h1>
+            <h2>FUJITSU ESPRIMO Q556/P</h2>
+            <table class="server-spec">
+                <tbody>
+                    <tr>
+                        <th>
+                            CPU
+                        </th>
+                        <td>
+                            Intel® Cerelon® G3900T (2.60GHz, 2C2T)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            RAM
+                        </th>
+                        <td>
+                            8GB
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ストレージ
+                        </th>
+                        <td>
+                            Hinyx SSD 250GB
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            OS
+                        </th>
+                        <td>
+                            Proxmox VE 9.1
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            トンネリングサービス
+                        </th>
+                        <td>
+                            Cloudflare Tunnel
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 更新情報はここから -->
+        <div class="content">
+            <h1>更新履歴</h1>
+            <ul class="news-list">
+                <li>
+                    <p>2025-12-21</p>
+                    <h3>サーバの稼働を開始しました。</h3>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>現在のトラフィック</h1>
+            <div class="img-container">
+                <img src="./img/traffic.png" alt="Traffic Graph" class="traffic-graph">
+            </div>
+            <p class="stats-text">{{SERVER_STATUS}}</p>
+        </div>
+
+        <footer>
+            <p>© 2024 - 2025 ざわたく.com all rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
