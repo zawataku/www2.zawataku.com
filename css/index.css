@@ -1,67 +1,70 @@
 *,
 *::before,
 *::after {
-    font-family: "M PLUS 1p";
-    box-sizing: border-box;
+  font-family: "M PLUS 1", sans-serif;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
-    background-color: #FFFFFF;
-    background-image: url(../img/bg.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333333;
+  background-color: #ffffff;
+  background-image: url(../img/bg.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
 }
 
 main {
-    background-color: #FFFFFF;
-    max-width: 1000px;
-    padding: 2rem 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+  background-color: #ffffff;
+  max-width: 1000px;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    border: 6px double;
-    padding: 2rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  border: 6px double;
+  padding: 2rem;
+  width: 100%;
 }
 
 header h1 {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-img {
-    width: 60%;
+  width: 60%;
 }
 
 .content {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .content h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
 }
 
 .content h2 {
-    font-weight: 700;
-    margin: 0.25rem 0;
+  font-weight: 700;
+  margin: 0.25rem 0;
 }
 
 .server-spec,
@@ -69,59 +72,59 @@ tbody,
 tr,
 th,
 td {
-    text-align: left;
+  text-align: left;
 }
 
 th {
-    font-weight: 700;
-    padding-right: 2rem;
+  font-weight: 700;
+  padding-right: 2rem;
 }
 
 .news-list {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .news-list li {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .news-list li p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .traffic-graph {
-    width: 100%;
+  width: 100%;
 }
 
 .stats-text {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 footer {
-    border-top: 1px solid;
-    padding-top: 2rem;
-    text-align: center;
+  border-top: 1px solid;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 2rem 1rem;
-        margin: 2rem 0;
-    }
+  main {
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+  }
 }
 
 @media (max-width: 500px) {
-    header {
-        padding: 2rem 0.75rem;
-    }
+  header {
+    padding: 2rem 0.75rem;
+  }
 
-    header h1 {
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 
-    .top-img {
-        width: 90%;
-    }
+  .top-img {
+    width: 90%;
+  }
 }
