@@ -22,9 +22,9 @@ CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk
 MSG="The server handles $CONN_HTTP HTTP connections with the use of $RX_RATE bandwidth and $CPU_USAGE CPU time on $DATE."
 
 # グラフ画像も一時ファイル経由で差し替え
-vnstati -vs -i "$INTERFACE" -o "$WEB_DIR/img/.traffic.png.tmp" \
-    && chmod 644 "$WEB_DIR/img/.traffic.png.tmp" \
-    && mv "$WEB_DIR/img/.traffic.png.tmp" "$WEB_DIR/img/traffic.png"
+vnstati -vs -i "$INTERFACE" -o "$WEB_DIR/img/.traffic.tmp.png" \
+    && chmod 644 "$WEB_DIR/img/.traffic.tmp.png" \
+    && mv "$WEB_DIR/img/.traffic.tmp.png" "$WEB_DIR/img/traffic.png"
 
 TIMESTAMP=$(date +%s)
 
