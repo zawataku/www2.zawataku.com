@@ -1,0 +1,5 @@
+# サーバー上で update_site.sh が生成するファイル
+html/index/index.html
+html/index/img/traffic.png
+html/index/.index.*
+html/index/img/.traffic.png.tmp
